@@ -1,0 +1,13 @@
+import { useState } from "react"
+import { CarouselData } from "shared/models/types/CarouselData"
+
+export const useCarousel  = (): { data : CarouselData[]} => {
+    const [data, setData] = useState<CarouselData[]>([{content_1 : {title : "Požadavky:", description : " vysokoškolské vzdělání  - věková kategorie-do 45 let - jazykové znalosti ( angličtina a čeština minimálně na úrovni B2)  - je žádoucí mít české občanství   - dobrá schopnost práce s PC a programy Word, Excel, PowerPoint atd.  - dobrý písemný a ústní projev   - vysoká úroveň sebeorganizace a pozornosti   - praxe ve sféře prodeje a instalace solárních panelů je výhodou   - schopnost pracovat v týmu   - vlastnosti vedoucího je výhodou   - odolnost vůči stresu  - smysl pro humor   - chápání trhu nákupu a prodeje solárních panelů v ČR"},
+     content_2 : {title : 'Úkoly a odpovědnosti:', description: ' komunikace s klienty osobně i online  - příprava seznamu potenciálních zákazníků, smluv, prezentací, obchodních nabídek a jejich rozesílání - údržba programu SoftWare pro transakční obratový doklad a interní výkazy - předání smluv, faktur a balících listů účetnímu  - vytvoření vlastního manažerského týmu o 2-4 lidech, vyškolení nováčků, hledání nových zástupců'},
+     content_3 : {title : 'Podmínky:', description : ' práce na dálku i v kanceláři- neustále učení a kariérní růst - příležitost se realizovat a stát se lídrem projektu - Zkušební doba: 1-3 měsíců - Fixní plat - Další bonusy  '}},
+    {content_1 : {title : "Požadavky:", description : " vysokoškolské vzdělání  - věková kategorie-do 45 let - jazykové znalosti ( angličtina a čeština minimálně na úrovni B2)  - je žádoucí mít české občanství   - dobrá schopnost práce s PC a programy Word, Excel, PowerPoint atd.  - dobrý písemný a ústní projev   - vysoká úroveň sebeorganizace a pozornosti   - praxe ve sféře prodeje a instalace solárních panelů je výhodou   - schopnost pracovat v týmu   - vlastnosti vedoucího je výhodou   - odolnost vůči stresu  - smysl pro humor   - chápání trhu nákupu a prodeje solárních panelů v ČR"},
+    content_2 : {title : 'Úkoly a odpovědnosti:', description: ' komunikace s klienty osobně i online  - příprava seznamu potenciálních zákazníků, smluv, prezentací, obchodních nabídek a jejich rozesílání - údržba programu SoftWare pro transakční obratový doklad a interní výkazy - předání smluv, faktur a balících listů účetnímu  - vytvoření vlastního manažerského týmu o 2-4 lidech, vyškolení nováčků, hledání nových zástupců'},
+    content_3 : {title : 'Podmínky:', description : ' práce na dálku i v kanceláři- neustále učení a kariérní růst - příležitost se realizovat a stát se lídrem projektu - Zkušební doba: 1-3 měsíců - Fixní plat - Další bonusy '}}, ])
+
+     return {data : data}
+}
