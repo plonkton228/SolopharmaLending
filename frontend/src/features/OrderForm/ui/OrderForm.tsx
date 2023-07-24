@@ -30,7 +30,7 @@ export const OrderForm : React.FC = ()=> {
 
         <div style={{marginBottom : "30px"}} className= {classesStyle.form_div} >
             <div className= {classesStyle.inner_form}><img src= {telephone}/> <p>Telefon *</p></div>
-            <input type="numbers" value={form.phone} onChange={(e)=> setForm({...form, phone : e.target.value})} placeholder="vas@mail.cz"></input>
+            <input type="numbers" value={form.phone} onChange={(e)=> setForm({...form, phone : e.target.value})} placeholder="111 111 111"></input>
         </div>
 
         <div >
