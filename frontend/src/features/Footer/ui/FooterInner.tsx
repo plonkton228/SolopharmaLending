@@ -10,7 +10,7 @@ export const FooterInner: React.FC = ()=> {
     return(<>
      <div className= {classesStyle.footer_container}>
             <nav className= {classesStyle.navigate_footer}>
-                <a href="#section1" ref={refa1} onClick={()=> useNavig(refa1.current)}><li>Home</li></a>
+                <a href="#section1" ref={refa1} onClick={()=> useNavig(refa1.current)}><li>Domů</li></a>
                 <a href="#section2" ref={refa2} onClick={()=> useNavig(refa2.current)}><li>Pracovní nabídky</li></a>
                 <a href="#section5" ref={refa3} onClick={()=> useNavig(refa3.current)}><li>Zprávy</li></a>
                 <a href="#section4" ref={refa4} onClick={()=> useNavig(refa4.current)}><li>Kontakt</li></a>

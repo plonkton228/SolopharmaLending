@@ -5,7 +5,7 @@ export const Order = ()=> {
     return(<>
     <div id = "#section3" className= {classesStyle.background_container}>
       <div className= {classesStyle.container}>
-         <h1>Objednat</h1>
+         <h1>Objednat zboží</h1>
          <OrderForm/>
       </div>
     </div>

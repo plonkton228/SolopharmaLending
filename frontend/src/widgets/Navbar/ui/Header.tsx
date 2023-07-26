@@ -17,6 +17,8 @@ export const Navbar : React.FC = ()=> {
     const refam2 = useRef<HTMLAnchorElement>(null) 
     const refam3 = useRef<HTMLAnchorElement>(null) 
     const refam4 = useRef<HTMLAnchorElement>(null) 
+    const refDiv = useRef<HTMLDivElement>(null)
+    const refDiv1 = useRef<HTMLDivElement>(null)
 
 
      return(<>
@@ -44,14 +46,15 @@ export const Navbar : React.FC = ()=> {
             </nav>
         </div>
      </div>
-     {/* <div  className={classesStyle.navigate_mobile_container}>
-     <div><img src= {Logo}/> <div className= {classesStyle.logo_div}><span className = {classesStyle.logo1}>Solo</span><span className= {classesStyle.logo2}>pharma</span></div></div>
-      <div style={{position : "relative"}}>
-       <div ref={ref1} onClick={()=> useNavBar(ref.current, ref1.current) }  className= {classesStyle.burger}></div>
-       <h4>MENU</h4>
+     <div  className={classesStyle.navigate_mobile_container}>
+        <div ref={refDiv1} className= {classesStyle.navigate_mobile_inner_container}>
+        <div ref={refDiv}  className= {classesStyle.logo_mobile}><img style={{minHeight: "100%"}} src= {Logo}/> <div className= {classesStyle.logo_div}><span className = {classesStyle.logo1}>Solo</span><span className= {classesStyle.logo2}>pharma</span></div></div>
+        <div style={{position : "relative", display : "flex", alignItems:"center"}}>
+        <h4>MENU</h4>
+        <div ref={ref1} onClick={()=> useNavBar(ref.current, ref1.current, refDiv.current, refDiv1.current) }  className= {classesStyle.burger}></div>
       </div> 
-      
-    </div> */}
-    <div ref={ref1} onClick={()=> useNavBar(ref.current, ref1.current) }  className= {classesStyle.burger}></div>
+        </div>
+    </div>
+    {/* <div ref={ref1} onClick={()=> useNavBar(ref.current, ref1.current) }  className= {classesStyle.burger}></div> */}
     </>)
 }

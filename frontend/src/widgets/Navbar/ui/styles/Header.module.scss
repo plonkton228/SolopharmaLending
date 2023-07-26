@@ -92,14 +92,39 @@
 }
 
 .navigate_mobile_container{
-    position: absolute;
+    display: none !important;
 
-    display: flex;
+    position: absolute;
 
     width: 100%;
 
-    justify-content: space-between;
+  
     
+}
+
+.navigate_mobile_inner_container{
+    display: flex;
+
+    justify-content: space-between;
+
+    max-width: 850px;
+  
+
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.navigate_mobile_inner_container.open{
+    justify-content: end !important;
+
+  
+}
+
+.navigate_mobile_inner_container.open h4{
+    display: none;
+
+  
 }
 
 .logo_div{
@@ -131,13 +156,13 @@
 
 
 .burger {
-    position: absolute;
+ 
     display: none;
     width: 25px;
     height: 3px;
 
-    top: 30px;
-    left : 40px;
+    margin-left: 15px;
+    border-radius: 20px;
 
    background-color: black;
 
@@ -156,14 +181,14 @@
 
 
 .burger.open::after {
-    top: 0;
+    top: 30px;
     transform: rotateZ(-45deg);
     transition: all 0.3s linear;
 }
 
 
 .burger.open::before {
-    top: 0;
+    top: 30px;
     transform: rotateZ(45deg);
     transition: all 0.3s linear;
 }
@@ -173,13 +198,14 @@
     content: '';
 
     position: absolute;
-    bottom:8px;
-    left: 0;
+    top: 37px;
+
     
     width: 25px;
     height: 3px;
 
     background-color: black;
+    border-radius: 20px;
 
     transition: all 0.3s linear;
     
@@ -190,18 +216,26 @@
     content: '';
 
     position: absolute;
-    top:8px;
-    left: 0;
+    top: 22px;
+
   
     width: 25px;
     height: 3px;
 
     background-color: black;
+    border-radius: 20px;
     transition: all 0.3s linear;
 
 }
 
+.logo_mobile{
+    display: flex;
+}
 
+
+.logo_mobile.open{
+    display: none;
+}
 
 @keyframes changePaddingBurgerFrom {
     0% {
@@ -259,7 +293,9 @@
     .navigate_mobile{
         display: flex;
     }
-
+    .navigate_mobile_container{
+        display: block !important;
+    }
    
 
   
