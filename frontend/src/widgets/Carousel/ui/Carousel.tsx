@@ -13,7 +13,7 @@ export const CarouselR : React.FC = ()=> {
     return(<>
      <div className= {stylesClasses.container}>
          <div className= {stylesClasses.Carousel_container}>
-            <h1>Pozice manažera</h1>
+            <h1>Pracovní nabídky</h1>
             <div className= {stylesClasses.inner_container}>
              <Carousel
              ref={ref}

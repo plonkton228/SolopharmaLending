@@ -9,7 +9,7 @@ export const CarouselChild : React.FC<CarouselData> = ({content_1,content_2,cont
     
     return(<>
     <div className= {classesStyle.inner_container_carousel}>
-       <div className= {classesStyle.intro_carousel}><img className= {classesStyle.intro_img} src= {intro_c}/> <h2>Potřebujete manažera</h2></div> 
+       <div className= {classesStyle.intro_carousel}><img className= {classesStyle.intro_img} src= {intro_c}/> <h2>Pozice manažera</h2></div> 
        <div className= {classesStyle.inner_content}>
         <div className= {classesStyle.child_inner1}>
          <img src= {img1}/>

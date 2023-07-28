@@ -54,6 +54,7 @@
     color : white;
 
     font-size: 30px;
+    cursor: pointer;
 
     
 }
@@ -82,4 +83,9 @@
     .btn {
         padding: 20px 40px;
     }
+
+    .btn::after {
+        right: 20px;
+       
+       }
 }
