@@ -8,7 +8,7 @@ export const KontaktInner : React.FC = () => {
     return(<>
       <div className= {classeStyle.kontakt_container}>
        <div className= {classeStyle.person_container}><img src= {person}/> 
-         <div><h3 >Daria Oshchepkova</h3> <p>Generální manažerka</p></div>
+         <div><h3 >Darin Oshchepkova</h3> <p>Generální manažerka</p></div>
        </div>
         <div className= {classeStyle.email_container}><img src = {email}/> <h3>Email</h3> <p>oshchepkova.solar@gmail.com</p></div>
         <div className= {classeStyle.number_container}><img src= {tel}/> <p>+420 797 837 856</p></div>

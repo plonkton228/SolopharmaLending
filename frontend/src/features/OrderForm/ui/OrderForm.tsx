@@ -24,7 +24,7 @@ export const OrderForm : React.FC = ()=> {
 
         <div style={{marginBottom : "30px"}}  >
             <div className= {classesStyle.inner_form}><img src = {email}/> <p>Email *</p></div>
-            <input  value={form.email} onChange={(e)=> setForm({...form, email : e.target.value})} placeholder="vas@mail.cz"></input>
+            <input  value={form.email} onChange={(e)=> setForm({...form, email : e.target.value})} placeholder="váš@mail.cz"></input>
         </div>
 
 
