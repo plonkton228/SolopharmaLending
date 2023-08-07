@@ -6,7 +6,7 @@ export const FooterButtonCarousel : React.FC = ()=> {
   const span2 = useRef();
  return(<>
    <div className= {classesStyle.btn_container}>
-     <button className= {classesStyle.btn} onClick={()=> useVisible(span1.current,span2.current)}><span className= {`${classesStyle.span1} ${classesStyle.visible}`} ref={span1}>Čekáme na váš životopis</span>  <span className= {classesStyle.span1} ref={span2}>shchepkova.solar@gmail.com</span>  </button>
+     <button className= {classesStyle.btn} onClick={()=> useVisible(span1.current,span2.current)}><span className= {`${classesStyle.span1} ${classesStyle.visible}`} ref={span1}>Čekáme na váš životopis</span>  <span className= {classesStyle.span1} ref={span2}>oshchepkova.solar@gmail.com</span>  </button>
    </div>
  </>)
 }
