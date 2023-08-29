@@ -48,6 +48,8 @@
 .logo_container{
     display: flex;
 
+    align-self: center;
+
 }
 
 .logo_container h1{
@@ -74,13 +76,42 @@
 .solo_container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     color : white;
 
-    align-self: center;
+    padding-top: 63px;
+   
+   
 }
 
+.solo_container p {
+    opacity: 70%;
+    font-size: 16px;
+}
+
+
+.last_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    color : white;
+
+}
+.last_container h2{
+    font-weight: 300;
+    color : #FFCC00;
+    margin: 0;
+
+    padding: 10px;
+
+}
+
+.last_container p{
+    padding-top: 10px;
+
+}
 .solo_container h1 {
 
 }
@@ -97,20 +128,37 @@
     .navigate_footer{
         margin-bottom: 40px;
         text-align: center;
+        align-items: start;
     }
     
     .solo_container  {
-        margin-bottom: 40px;
+        order: 3;
+        padding-top: 40px;
+
+
     }
-    .solo_container p {
-        display: none;
+
+    .last_container {
+        order: 2;
+
     }
+
+    .last_container div {
+        padding-left: 0px !important;
+        
+    }
+
+    .last_container h2 {
+        padding: 0px;
+        
+    }
+    .footer_container{
+        justify-content: start;
+     }
 
     
 }
 
 @media (max-width : 530px){
-    .footer_container{
-        justify-content: center;
-     }
+   
 }

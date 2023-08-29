@@ -16,9 +16,16 @@ export const FooterInner: React.FC = ()=> {
                 <a href="#section4" ref={refa4} onClick={()=> useNavig(refa4.current)}><li>Kontakt</li></a>
             </nav>
         <div className= {classesStyle.solo_container}> <div className= {classesStyle.logo_container}><img src= {logo}/> <div><h1>SOLO</h1> <h1><span>PHARMA</span></h1></div> </div>   
-         <h2><span>Solopharma Group, s.r.o</span></h2>
+        <p>(c) Copyright 2023 Solopharma Group</p>
          </div>
-
+         <div className= {classesStyle.last_container}>   
+           <h2><span>Solopharma Group, s.r.o</span></h2>
+           <div style={{paddingLeft: "20px" , paddingTop: "20px"}}>
+            <p>Number: +420 797 837 856</p>
+            <p>Email: oshchepkova.solar@gmail.com</p>
+            <p>Adress: Na Lysinách 551/34,<br/> Praha 4 - Hodkovičky, PSČ 147 00</p>
+           </div>
+         </div>
      </div>
     </>)
 }

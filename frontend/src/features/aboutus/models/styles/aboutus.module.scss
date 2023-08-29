@@ -1,5 +1,5 @@
 .Info{
- max-width: 774px;
+ max-width: 824px;
 
 }
 
@@ -10,7 +10,7 @@
  font-weight: 700;
  color : #000000;
  margin: 0;
- padding-left: 10px;
+ padding-left: 30px;
  
 }
 
@@ -21,7 +21,8 @@
     font-weight: 700;
     color : #FFCC00;
     margin:0;
-    padding-left: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
 
    
 
@@ -37,9 +38,9 @@
     white-space: pre-line;
     max-width: 690px;
     font-size: 20px;
-    padding-left: 10px;
+    padding-left: 30px;
 
-    margin-bottom: 80px;
+    margin: 63px 0;
     line-height: 30px;
 }
 
@@ -47,45 +48,66 @@
 .btn{
     position: relative;
     background-color: #333333;
-    border-radius: 0 20px 0 20px;
+    border-radius: 20px 0 20px 0;
 
-    padding: 20px 70px;
+    padding: 20px 80px 20px 40px;
 
     color : white;
 
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 600;
     cursor: pointer;
 
+    text-transform: uppercase;
+
+    margin-left: 30px;
+
+    
+}
+
+.btn p{
+ 
+ margin: 0;
+  
     
 }
 
 .btn::after {
  content: url('../img/Vector.png');
  position: absolute;
- right: 40px;
-
+ right: 30px;
+ top: 26px
 }
 
 @media (max-width :900px) {
     .Info1{
         max-width: 759px;
-        font-size: 38px;
+        font-size: 35px;
         font-weight: 600;
+        padding-left: 15px;
        }
        
        
     .Info2{
         max-width: 759px;
-        font-size: 38px;
+        font-size: 35px;
         font-weight: 600;    
+        padding-left: 15px;
        }
 
     .btn {
-        padding: 20px 40px;
+        padding: 20px 40px 20px 20px;
+        margin-left: 0;
     }
 
     .btn::after {
-        right: 20px;
+        right: 13px;
        
        }
+
+
+       .Info p {
+        padding-left: 15px;
+    
+    }
 }

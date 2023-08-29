@@ -30,7 +30,7 @@ export const Aboutus : React.FC = ()=> {
 roce 2015 zakladatelé společnosti spatřili perspektivu v rozvoji solární energie. Solopharma Group si zakoupila solární panely a instalovala je 
 na vlastní pozemek. Kvůli evropské energetické krizi se společnost v
 roce 2022 rozhodla o vstoupení na trh.</p>
-      <button className= {classesStyle.btn} onClick={()=> handleDownload()}>Co nabízíme</button>
+      <button className= {classesStyle.btn} onClick={()=> handleDownload()}><p>Co nabízíme</p></button>
      </div>
     </>)
 }
