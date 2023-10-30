@@ -5,7 +5,7 @@
 <div>
   <p align="left">
     Single page application с небольшой административной панелью.
-    Структура приложение строилась на Feature-sliced docs: https://feature-sliced.design/docs
+    Структура приложения строилась на Feature-sliced docs: https://feature-sliced.design/docs
     Ссылка на сайт: http://solopharma.shop/
   </p>
 </div>
